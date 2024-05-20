@@ -39,6 +39,33 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MoH-yq-5r1">
+                                        <rect key="frame" x="0.0" y="274" width="320" height="274"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-Ff-HqQ">
+                                                <rect key="frame" x="72.5" y="117" width="175.5" height="40"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="괜찮던 맘을 괜시리 아프게 할 때면" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vl-yS-LQJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="너를 잊어야 할까 oh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j92-nG-9XU">
+                                                        <rect key="frame" x="0.0" y="24" width="175.5" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="GaD-Ff-HqQ" firstAttribute="centerY" secondItem="MoH-yq-5r1" secondAttribute="centerY" id="D36-rn-959"/>
+                                            <constraint firstItem="GaD-Ff-HqQ" firstAttribute="centerX" secondItem="MoH-yq-5r1" secondAttribute="centerX" id="hYZ-lk-zza"/>
+                                            <constraint firstItem="GaD-Ff-HqQ" firstAttribute="centerX" secondItem="MoH-yq-5r1" secondAttribute="centerX" id="zP9-CB-yz6"/>
+                                        </constraints>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Fza-Hu-whL">
                                         <rect key="frame" x="280" y="0.0" width="30" height="72"/>
                                         <subviews>
@@ -141,16 +168,16 @@
                                         <rect key="frame" x="10" y="455.5" width="300" height="22"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJY-FW-AbQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="16.5" height="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="repeat" catalog="system"/>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6B-8T-l2B">
-                                                <rect key="frame" x="32" y="0.0" width="234.5" height="22"/>
+                                                <rect key="frame" x="26.5" y="0.0" width="251" height="22"/>
                                                 <subviews>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eh4-OQ-mA5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="4"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="251" height="4"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                                     </progressView>
@@ -161,7 +188,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbi-7Q-mbj">
-                                                        <rect key="frame" x="208.5" y="9" width="26" height="16"/>
+                                                        <rect key="frame" x="225" y="9" width="26" height="16"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -180,7 +207,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyG-6h-HCc">
-                                                <rect key="frame" x="276.5" y="0.0" width="23.5" height="22"/>
+                                                <rect key="frame" x="287.5" y="0.0" width="12.5" height="22"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="shuffle" catalog="system"/>
@@ -238,39 +265,24 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GaD-Ff-HqQ">
-                                        <rect key="frame" x="72.5" y="401.5" width="175.5" height="40"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="괜찮던 맘을 괜시리 아프게 할 때면" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vl-yS-LQJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="175.5" height="16"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="너를 잊어야 할까 oh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j92-nG-9XU">
-                                                <rect key="frame" x="0.0" y="24" width="175.5" height="16"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Fza-Hu-whL" firstAttribute="top" secondItem="4iJ-MZ-yna" secondAttribute="top" id="25b-C7-9vk"/>
                                     <constraint firstAttribute="bottom" secondItem="1Db-lD-sU6" secondAttribute="bottom" constant="20" id="3e0-8n-CwN"/>
+                                    <constraint firstItem="MoH-yq-5r1" firstAttribute="height" secondItem="6Ij-aj-pnV" secondAttribute="height" multiplier="0.5" id="3iD-Sj-c1w"/>
                                     <constraint firstItem="M6U-Qq-QRF" firstAttribute="trailing" secondItem="Aof-bb-dMg" secondAttribute="trailing" constant="10" id="3xv-tb-HNs"/>
                                     <constraint firstItem="M6U-Qq-QRF" firstAttribute="width" secondItem="6Ij-aj-pnV" secondAttribute="width" multiplier="0.85" id="4Fx-W7-LjE"/>
-                                    <constraint firstItem="GaD-Ff-HqQ" firstAttribute="centerX" secondItem="6Ij-aj-pnV" secondAttribute="centerX" id="FfZ-Af-qzO"/>
+                                    <constraint firstAttribute="trailing" secondItem="MoH-yq-5r1" secondAttribute="trailing" id="5gO-KM-fuq"/>
+                                    <constraint firstAttribute="bottom" secondItem="MoH-yq-5r1" secondAttribute="bottom" id="5nM-sQ-HD7"/>
                                     <constraint firstItem="4iJ-MZ-yna" firstAttribute="top" secondItem="6Ij-aj-pnV" secondAttribute="top" id="RdI-zB-R71"/>
                                     <constraint firstItem="1Db-lD-sU6" firstAttribute="top" secondItem="sYC-eX-Aot" secondAttribute="bottom" constant="20" id="SQW-Qg-JeY"/>
                                     <constraint firstItem="4iJ-MZ-yna" firstAttribute="centerX" secondItem="6Ij-aj-pnV" secondAttribute="centerX" id="Uk0-nQ-iQL"/>
                                     <constraint firstItem="Aof-bb-dMg" firstAttribute="top" secondItem="M6U-Qq-QRF" secondAttribute="bottom" constant="10" id="Ule-Vs-QKu"/>
                                     <constraint firstItem="v5H-wW-uAz" firstAttribute="leading" secondItem="M6U-Qq-QRF" secondAttribute="leading" constant="10" id="VBS-kY-3x3"/>
                                     <constraint firstItem="M6U-Qq-QRF" firstAttribute="centerX" secondItem="6Ij-aj-pnV" secondAttribute="centerX" id="XCn-z0-OtK"/>
-                                    <constraint firstItem="GaD-Ff-HqQ" firstAttribute="top" secondItem="v5H-wW-uAz" secondAttribute="bottom" constant="20" id="Xhj-Q5-Ut6"/>
                                     <constraint firstAttribute="trailing" secondItem="sYC-eX-Aot" secondAttribute="trailing" constant="10" id="aie-3U-zK1"/>
                                     <constraint firstItem="sYC-eX-Aot" firstAttribute="leading" secondItem="6Ij-aj-pnV" secondAttribute="leading" constant="10" id="ctN-vw-3Ty"/>
+                                    <constraint firstItem="MoH-yq-5r1" firstAttribute="leading" secondItem="6Ij-aj-pnV" secondAttribute="leading" id="e0U-jn-G4i"/>
                                     <constraint firstItem="M6U-Qq-QRF" firstAttribute="centerY" secondItem="6Ij-aj-pnV" secondAttribute="centerY" multiplier="0.75" id="e6E-cQ-scE"/>
                                     <constraint firstItem="1Db-lD-sU6" firstAttribute="leading" secondItem="6Ij-aj-pnV" secondAttribute="leading" constant="10" id="kXz-57-4VN"/>
                                     <constraint firstAttribute="trailing" secondItem="1Db-lD-sU6" secondAttribute="trailing" constant="10" id="nLk-D4-7Hd"/>
